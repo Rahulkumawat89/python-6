@@ -1,1 +1,21 @@
-
+t=int(input())
+for i in range (0,t):
+    a,b,c=input().split()
+    a=int(a)
+    b=int(b)
+    c=int(c)
+    if(a>b & a>c):
+        if(b>c):
+            print(b)
+        else:
+            print(c)
+    elif(b>c & b>a):
+        if(a>c):
+            print(a)
+        else:
+            print(b)
+    elif(c>a & c>b):
+        if(a>b):
+            print(a)
+       else:
+            print(b)
